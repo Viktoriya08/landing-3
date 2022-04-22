@@ -1,0 +1,32 @@
+.b-price{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    & .b-price__new{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #7AC751;
+        margin-right: 7px;
+    }
+    & .b-price__old{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #CCCCCC;
+        text-decoration: line-through;
+        margin-right: 7px;
+    }
+}
+@media (min-width:1250px) {
+    .b-price{
+        & .b-price__new{
+            font-size: 18px;
+            line-height: 21px;
+        }
+        & .b-price__old{
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+}

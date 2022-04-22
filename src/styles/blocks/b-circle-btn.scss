@@ -1,0 +1,32 @@
+.b-circle-btn{
+   width: 30px;
+   height: 30px;
+   background-color: #fff;
+   border: none;
+   cursor: pointer;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   & svg{
+    fill: #757575;
+   }
+   &:hover{
+      background-color: #7AC751;
+   }
+   &:hover svg{
+      fill: #fff;
+   }
+   &.active{
+      background-color: #7AC751;
+      & svg{
+         fill: #fff;
+      }
+   }
+}
+@media (min-width:1250px) {
+   .b-circle-btn{
+      width: 40px;
+      height: 40px;
+   }
+}

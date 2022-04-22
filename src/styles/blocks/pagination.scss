@@ -1,0 +1,106 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    & .pagination__next{
+        width: 100%;
+        & .b-btn{
+            margin-left: auto;
+            margin-bottom: 5px;
+        }
+    }
+    & .pagination__box{
+        display: flex;
+        align-items: center;
+        color: #757575;
+        margin-left: 55px;
+        & span{
+            font-size: 14px;
+            line-height: 18px;
+            margin-right: 5px;
+        }
+        & .pagination__current{
+            width: 60px;
+            border: 2px solid #CCCCCC;
+            border-radius: 2px;
+            text-align: center;
+            padding: 5px;
+            margin-right: 10px;
+        }
+    }
+    & .b-btn button{
+        text-transform: inherit;
+        background-image: url(../images/arrow-white.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: right;
+        background-position: 85px;
+        width: 100%;
+        line-height: 18px;
+        font-size: 14px;
+        text-align: left;
+        padding: 7px 10px;
+    }
+    & .b-btn{
+        width: 110px;
+    }
+    & .pagination__btns{
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        & .pagination__btn-next, 
+          .pagination__btn-prev{
+              width: 100%;
+          }
+        & .pagination__btn-next button{
+            background-image: url(../images/arrow-btn.svg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+            border-radius: 0 2px 2px 0;
+            padding: 15px;
+        }
+        & .pagination__btn-prev button{
+            background-image: url(../images/arrow-btn.svg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+            transform: rotate(180deg);
+            border-radius: 0 2px 2px 0;
+            padding: 15px;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .pagination{
+        & .pagination__next{
+            width: auto;
+            & .b-btn{
+                margin-left: 0;
+                margin-bottom: 0;
+            }
+        }
+        & .pagination__box{
+            margin-left: 145px;
+            & span{
+                font-size: 18px;
+                line-height: 23px;
+                margin-right: 10px;
+            }
+            & .pagination__current{
+                margin-right: 20px;
+            }
+        }
+        & .b-btn{
+            width: 160px;
+        }
+        & .b-btn button{
+            background-position: 130px;
+            width: 100%;
+            line-height: 22px;
+            font-size: 18px;
+        }
+    }
+}

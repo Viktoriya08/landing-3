@@ -1,0 +1,135 @@
+.reviews{
+    padding: 30px 0;
+    
+    & .container{
+        padding: 0 30px;
+        position: relative;
+    }
+    & .b-title{
+        margin-bottom: 15px;
+    }
+    & .b-grey-btn{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        z-index: 2;
+        &--prev{
+            left: 10px;
+        }
+    }
+}
+
+.review{
+    text-align: center;
+    background-color: #F8FAFB;
+    padding: 40px 10px 30px;
+    border-radius: 8px;
+    margin: 50px 15px 0;
+    position: relative;
+    & .review__img{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: -35px;
+        left: calc(50% - 30px);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    & p{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    & span{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    & .review__author{
+        margin-top: 5px;
+        margin-bottom: 3px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+}
+@media (min-width:768px) {
+    .reviews{
+        padding: 30px 0;
+        
+        & .container{
+            padding: 0 90px;
+        }
+        & .b-grey-btn{
+            right: 10px;
+            &--prev{
+                left: 10px;
+            }
+        }
+    }
+    
+    .review{
+        padding: 40px 20px 30px;
+        border-radius: 8px;
+        margin: 60px 15px 0;
+        & .review__img{
+            width: 60px;
+            height: 60px;
+            left: calc(50% - 45px);
+        }
+        & p{
+            font-size: 14px;
+            line-height: 22px;
+        }
+        & span{
+            font-size: 16px;
+            line-height: 20px;
+        }
+        & .review__author{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22px;
+        }
+    }
+}
+
+@media (min-width:1250px) {
+    .reviews{
+        padding: 60px 0;
+        
+        & .container{
+            padding: 0 200px;
+        }
+        & .b-grey-btn{
+            right: 120px;
+            &--prev{
+                left: 120px;
+            }
+        }
+    }
+    
+    .review{
+        padding: 80px 80px 50px;
+        margin: 60px 35px 0;
+        & .review__img{
+            width: 90px;
+            height: 90px;
+        }
+        & p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        & span{
+            font-size: 16px;
+            line-height: 20px;
+        }
+        & .review__author{
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+        }
+    }
+}

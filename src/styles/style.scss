@@ -1,0 +1,79 @@
+
+html{
+  scroll-behavior: smooth;
+}
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    height: 100%;
+    text-rendering: optimizeSpeed;
+    font-family: 'Mulish', sans-serif;
+    /* font-family: 'Rubik', sans-serif; */
+    /* font-family: 'DM Sans', sans-serif; */
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    color: #555555;
+}
+
+/* .wrapper-body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
+
+.container{
+    padding: 0 15px;
+}
+@media (min-width: 768px){
+    .container{
+        width: 708px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1250px){
+    .container{
+      padding: 0 15px;
+      width: 1200px;
+    }
+}
+
+/* @mixin font($family, $weight ,$size , $height) {
+  font-family: $family, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+} */
+
+/* .b-title h2{
+  @include font("Rubik", 400, 25px, 25px);
+  text-transform: uppercase;
+}
+@media (min-width:1200px) {
+    .b-title h2{
+        @include font('Mulish', 700, 36px, 45px);
+    }
+} */
+
+@import "../styles/blocks/b-title.scss";
+@import "../styles/blocks/b-btn.scss";
+@import "../styles/blocks/b-net.scss";
+@import "../styles/blocks/b-label.scss";
+@import "../styles/blocks/benefits.scss";
+@import "../styles/blocks/special.scss";
+@import "../styles/blocks/b-tabs.scss";
+@import "../styles/blocks/b-card.scss";
+@import "../styles/blocks/b-stars.scss";
+@import "../styles/blocks/b-circle-btn.scss";
+@import "../styles/blocks/trends.scss";
+@import "../styles/blocks/b-dot-btn.scss";
+@import "../styles/blocks/offer-card.scss";
+@import "../styles/blocks/b-price.scss";
+@import "../styles/blocks/b-circle.scss";
+@import "../styles/blocks/products.scss";
+@import "../styles/blocks/pagination.scss";
+@import "../styles/blocks/reviews.scss";
+@import "../styles/blocks/b-grey-btn.scss";
+@import "../styles/blocks/articles.scss";
+@import "../styles/blocks/footer.scss";
+@import "../styles/blocks/social-icons.scss";
+

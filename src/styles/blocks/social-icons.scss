@@ -1,0 +1,14 @@
+.social-icons{
+    display: flex;
+    & a{
+        display: block;
+        padding: 10px;
+        margin-right: 15px;
+    }
+    & a:hover svg{
+        fill: #7AC751;
+    }
+    & svg{
+        fill: #555555;
+    }
+}

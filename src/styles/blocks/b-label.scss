@@ -1,0 +1,75 @@
+.b-label{
+    position: relative;
+}
+.b-label[data-label='new']::before{
+    content:  attr(data-label);
+    display: block;
+    position: absolute;
+    background-color: #00B7F1;
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    top: 5px;
+    left: 5px;
+    width: 45px;
+    height: 20px;
+    text-align: center;
+    padding-top: 2px;
+    border-radius: 0 0 5px 0;
+    z-index: 2;
+}
+.b-label[data-label='sale']::before{
+    content: attr(data-label);
+    display: block;
+    position: absolute;
+    background-color: #7AC751;
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    top: 5px;
+    left: 5px;
+    width: 45px;
+    height: 20px;
+    text-align: center;
+    padding-top: 2px;
+    border-radius: 0 0 5px 0;
+    z-index: 2;
+}
+.b-label[data-label$='%']::before{
+    content: attr(data-label);
+    display: block;
+    position: absolute;
+    background-color: #FF6868;
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    top: 5px;
+    left: 5px;
+    width: 45px;
+    height: 20px;
+    text-align: center;
+    padding-top: 2px;
+    border-radius: 0 0 5px 0;
+    z-index: 2;
+}
+.b-label--right[data-label$='off']::before{
+    content: attr(data-label);
+    display: block;
+    position: absolute;
+    background-color: #00B7F1;
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    top: 0;
+    left: calc(100% - 65px);
+    width: 65px;
+    height: 20px;
+    text-align: center;
+    padding-top: 2px;
+    border-radius: 0 0 0 5px;
+    z-index: 2;
+}

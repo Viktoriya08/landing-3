@@ -1,0 +1,26 @@
+.b-dot-btn{
+    & span{
+        position: relative;
+        width: 25px;
+        height: 25px;
+        border: 4px solid #7AC751;
+        background-color: #fff;
+        border-radius: 50%; 
+        &::before{
+            content: ' ';
+            display: block;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #7AC751;
+            left: 4px;
+            top: 4px;
+            border-radius: 50%;
+        }
+    }
+
+}
+.b-dot-btn.swiper-pagination{
+    position: static;
+    margin-top: 50px;
+}

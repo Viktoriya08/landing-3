@@ -1,0 +1,19 @@
+@mixin font($family, $weight ,$size , $height) {
+    font-family: $family, sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+.b-title{
+    text-align: center;
+}
+.b-title h2{
+    @include font("Rubik", 400, 25px, 25px);
+    text-transform: uppercase;
+}
+
+@media (min-width:1200px) {
+    .b-title h2{
+        @include font('Mulish', 700, 36px, 45px);
+    }
+}

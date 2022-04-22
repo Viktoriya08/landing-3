@@ -1,0 +1,34 @@
+.b-btn{
+    width: 160px;
+    align-self: flex-start;
+    
+}
+.b-btn button{
+    background-color: #7AC751;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.b-btn button:hover{
+    background-color: #58ad2a;
+}
+
+/* @media (min-width: 768px) {
+    .b-bnt{
+        min-width: 165px;
+        & button{
+            padding: 20px 10px;
+        }
+    }
+} */
+/* @media (min-width: 1190px) {
+    .b-bnt{
+        min-width: 165px;
+        & button{
+            padding: 20px 10px;
+        }
+    }
+} */

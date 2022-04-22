@@ -1,0 +1,21 @@
+.b-stars{
+    text-align: right;
+}
+.b-stars svg{
+    stroke: #CCCCCC;
+}
+.b-stars[data-stars='5'] svg{
+    stroke: #7AC751;
+}
+.b-stars[data-stars='4'] svg:nth-child(-n+4){
+    stroke: #7AC751;
+}
+.b-stars[data-stars='3'] svg:nth-child(-n+3){
+    stroke: #7AC751;
+}
+.b-stars[data-stars='2'] svg:nth-child(-n+2){
+    stroke: #7AC751;
+}
+.b-stars[data-stars='1'] svg:nth-child(-n+1){
+    stroke: #7AC751;
+}
